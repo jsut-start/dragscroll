@@ -1,0 +1,69 @@
+.dragScrollBar{
+  position: relative;
+  overflow: hidden;
+}
+.BarNotAlwaysClass>.dragScrollVerticalPanel>.dragScrollVerticalBar,.BarNotAlwaysClass>.dragScrollVerticalPanel>.dragScrollVerticalBar,.BarNotAlwaysClass>.dragScrollVerticalPanel>.dragScrollVerticalBar{
+  opacity:0
+}
+.BarNotAlwaysClass>.dragScrollHorizontalPanel>.dragScrollHorizontalBar,.BarNotAlwaysClass>.dragScrollHorizontalPanel>.dragScrollHorizontalBar,.BarNotAlwaysClass>.dragScrollHorizontalPanel>.dragScrollHorizontalBar{
+  opacity:0
+}
+.BarNotAlwaysClass:active>.dragScrollVerticalPanel>.dragScrollVerticalBar,.BarNotAlwaysClass:focus>.dragScrollVerticalPanel>.dragScrollVerticalBar,.BarNotAlwaysClass:hover>.dragScrollVerticalPanel>.dragScrollVerticalBar{
+  opacity:0.5
+}
+.BarNotAlwaysClass:active>.dragScrollHorizontalPanel>.dragScrollHorizontalBar,.BarNotAlwaysClass:focus>.dragScrollHorizontalPanel>.dragScrollHorizontalBar,.BarNotAlwaysClass:hover>.dragScrollHorizontalPanel>.dragScrollHorizontalBar{
+  opacity:0.5
+}
+.dragScrollBarContent{
+  overflow:scroll;
+  max-height: 100%;
+}
+.dragScrollHorizontalPanel,.dragScrollVerticalPanel{
+  position:absolute;
+  border-radius: 5px;
+
+}
+.dragScrollHorizontalBar,.dragScrollVerticalBar{
+  border-radius: 5px;
+  z-index: 5;
+  cursor:pointer;
+  opacity:1;
+  transition: opacity 1s;
+}
+.BarNotAlwaysClass>.dragScrollVerticalPanel>.dragScrollVerticalBar:hover{
+  opacity:1
+}
+.BarNotAlwaysClass>.dragScrollHorizontalPanel>.dragScrollHorizontalBar:hover{
+  opacity:1
+}
+.dragScrollHorizontalPanel{
+  height: 17px;
+  width: 100%;
+  background: red;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align:center;
+}
+.dragScrollHorizontalBar{
+  height: 6px;
+  width: 20%;
+  background: #000;
+}
+.dragScrollVerticalPanel{
+  top:0;
+  right:0;
+  display: flex;
+  height: 100%;
+  width: 17px;
+  background: red;
+  justify-content: center;
+  display: -ms-flexbox;
+ -ms-flex-pack:center;
+}
+.dragScrollVerticalBar{
+  height: 20%;
+  width: 6px;
+  background: #000;
+}
